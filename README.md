@@ -1,6 +1,7 @@
 
 Reload browser tabs from the terminal in OSX.
 
+
 Uses a sneaky four-line AppleScript that works across all[1] browsers.
 
 ### Usage
@@ -12,6 +13,13 @@ Uses a sneaky four-line AppleScript that works across all[1] browsers.
 
     # 2. reload URL containing 'localhost' in Safari
     reload-browser safari localhost
+```
+### Usage in conjunction with entr
+```bash
+
+ls README.md|entr -s 'marked README.md > README.html ; reload-browser safari README'
+
+
 ```
 
 ### Install
